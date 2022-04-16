@@ -8,18 +8,20 @@ public class FizzBuzzTest
     [InlineData(1)]
     public void OneShouldBeOne(int value)
     {
-        Assert.Equal("1", FizzBuzz.ToFizzBuzz(value));
+        Assert.Equal(value.ToString(), FizzBuzz.ToFizzBuzz(value));
     }
     
     [Theory]
     [InlineData(3)]
-    public void IsDivisibleByThree(int value)
+    [InlineData(9)]
+    public void IfIsDivisibleByThree(int value)
     {
         Assert.Equal("fizz",FizzBuzz.ToFizzBuzz(value));
     }
 
     [Theory]
     [InlineData(5)]
+    [InlineData(10)]
     public void IsDivisibleByFive(int value)
     {
         Assert.Equal("buzz", FizzBuzz.ToFizzBuzz(value));
@@ -27,7 +29,7 @@ public class FizzBuzzTest
 
     [Theory]
     [InlineData(15)]
-
+    [InlineData(30)]
     public void IsDivisibleByFiveAndThree(int value)
     {
         Assert.Equal("fizzbuzz",FizzBuzz.ToFizzBuzz(value));

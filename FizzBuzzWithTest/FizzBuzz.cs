@@ -16,6 +16,6 @@ public static class FizzBuzz
         {
             return "buzz";
         }
-        return $"{i}";
+        return i.ToString();
     }
 }
