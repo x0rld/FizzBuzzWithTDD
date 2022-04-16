@@ -6,7 +6,9 @@ public class FizzBuzzTest
 {
     [Theory]
     [InlineData(1)]
-    public void OneShouldBeOne(int value)
+    [InlineData(2)]
+    [InlineData(4)]
+    public void ShouldNotBeFizzBuzz(int value)
     {
         Assert.Equal(value.ToString(), FizzBuzz.ToFizzBuzz(value));
     }
