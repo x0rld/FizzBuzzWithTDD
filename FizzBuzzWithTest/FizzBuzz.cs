@@ -4,14 +4,14 @@ public static class FizzBuzz
 {
     public static string ToFizzBuzz(int i)
     {
-        if (i == 3)
+        if (i % 3 == 0)
         {
             return "fizz";
         }
-        if (i == 5)
+        if (i % 5 == 0)
         {
             return "buzz";
         }
-        return "1";
+        return $"{i}";
     }
 }
