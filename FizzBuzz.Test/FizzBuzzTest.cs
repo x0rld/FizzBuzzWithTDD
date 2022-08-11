@@ -1,6 +1,6 @@
 using Xunit;
 using FizzBuzzClass = FizzBuzz.FizzBuzz;
-namespace FizzBuzzWithTest;
+namespace FizzBuzz.Test;
 
 public class FizzBuzzTest
 {
